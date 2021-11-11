@@ -1,3 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap');
+
+*,*::before,*::after {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: rgb(36,158,121);
+  background: -moz-linear-gradient(170deg, rgba(36,158,121,1) 18%, rgba(36,158,130,1) 74%);
+  background: -webkit-linear-gradient(170deg, rgba(36,158,121,1) 18%, rgba(36,158,130,1) 74%);
+  background: linear-gradient(170deg, rgba(36,158,121,1) 18%, rgba(36,158,130,1) 74%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#249e79",endColorstr="#249e82",GradientType=1);
+}
+
+.layout-component {
+  background: rgb(250,250,250);
+  backdrop-filter: blur(12px);
+}

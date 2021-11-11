@@ -3,11 +3,13 @@
 const express = require('express');
 const router = express.Router();
 
-const { getSchedule } = require('../controllers/scheduleControllers.js');
+const { getSchedule, editSchedule, deleteSchedule } = require('../controllers/scheduleControllers.js');
 
 // ----- ROUTES ----- \\
 
 router.get('/', getSchedule);
+router.put('/', editSchedule);
+router.delete('/', deleteSchedule);
 
 // ----- EXPORT ----- \\
 

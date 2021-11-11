@@ -9,6 +9,26 @@ const getSchedule = (req,res) => {
   }
 }
 
+const editSchedule = (req,res) => {
+  try {
+    
+  } catch (error) {
+    console.error(err)
+    res.status(500).json({message: err})  
+  }
+}
+
+const deleteSchedule = (req,res) => {
+  try {
+    const { userId } = req.body;
+  } catch (error) {
+    console.error(err)
+    res.status(500).json({message: err})    
+  }
+}
+
 module.exports = {
-  getSchedule
+  getSchedule,
+  editSchedule,
+  deleteSchedule
 }
