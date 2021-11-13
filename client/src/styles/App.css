@@ -11,14 +11,23 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-  background: rgb(36,158,121);
-  background: -moz-linear-gradient(170deg, rgba(36,158,121,1) 18%, rgba(36,158,130,1) 74%);
-  background: -webkit-linear-gradient(170deg, rgba(36,158,121,1) 18%, rgba(36,158,130,1) 74%);
-  background: linear-gradient(170deg, rgba(36,158,121,1) 18%, rgba(36,158,130,1) 74%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#249e79",endColorstr="#249e82",GradientType=1);
+}
+
+#root {
+  background-image: url('../images/wave-background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .layout-component {
-  background: rgb(250,250,250);
-  backdrop-filter: blur(12px);
+  background: rgba(246, 255, 255, .6);
+  box-shadow: 0 8px 32px 0 rgba(246, 255, 255, .6);
+  backdrop-filter: blur( 1.5px );
+  -webkit-backdrop-filter: blur( 1.5px );
+  border-radius: 10px;
+  border: 1px solid rgba(202, 196, 196, 0.18);
+}
+
+.layout-component-main {
+  height: 95.2vh;
 }

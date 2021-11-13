@@ -9,7 +9,7 @@ const Layout = ({ children }) => {
         <div className="col-span-1">
           <Navbar />
         </div>
-        <div className="grid grid-cols-9 py-2 gap-2">
+        <div className="grid grid-cols-9 pt-2 gap-2">
           <div className="col-span-1">
             <Sidebar /> 
           </div>
